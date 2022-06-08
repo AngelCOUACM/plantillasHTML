@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="wrapper"><!--Inicia wrapper-->
+		<img src="" alt="cookie">
+		<div class="content"><!--Inicia content-->
+			<header>Cookies Constent</header>
+			<p>This website use cookies to ensure you get the best experience on our website</p>
+			<div class="buttons">
+				<button class="item">I understand</button>
+				<a href="#" class="item">Learn More</a>
+			</div>
+		</div><!--Termina content-->
+	</div><!--Termina wrapper-->
+
+	<script>
+		const cookieBox = document.querySelector(".wrapper") ,
+		acceptBtn = cookieBox.querySelector("button");
+
+		acceptBtn.onclick = ()=>{
+			//creacion de la cookie para el navegador
+			acceptBtn.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
+
+			if(document.cookie){
+				cookieBox.classList.add("hide");
+			}else{
+				alert("Cookie can't be set! Please unblock this site from the cookie setting of your browers.");
+			}
+		}
+
+		let checkCookie = document.cookie.indexOf("CookieBy=CodigoNepal");
+
+		checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+	</script>
+
+</body>
+</html>
