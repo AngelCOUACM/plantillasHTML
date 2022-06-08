@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="fonts.css">
+</head>
+
+<body>
+
+<div class="main">
+
+   <div class="slides">
+     <img src="images/1.jpg" alt="">
+     <img src="images/2.jpg" alt="">
+     <img src="images/3.jpg" alt="">
+     <img src="images/4.jpg" alt="">
+   </div>
+</div>
+<script src="jquery-3.0.0.min.js"></script>
+<script src="js/jquery.slides.js"></script>
+<script>
+
+$(function(){
+	$(".slides").slidesjs({
+		
+		play:{
+			active: true,
+			// [boolean] Generate the play and stop buttons.
+			// You cannot use your own buttons. Sorry.
+			effect:"slide",
+			// [string] Can be either "slide" or "fade"
+			interval:5000,
+			// [number] Time spent on each slide in miliseconds
+			auto: false,
+			// [boolean] Star playing the slideshow on load
+			swap: true,
+			// [boolean] show/hide stop an play buttons
+			pauseOnHover: false,
+			// [boolean] pause a playing slideshow on hover
+			restartDelay: 2500
+			// [number] restart delay on inactive slideshow
+			}
+		});
+	});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+
+--------Si estas leyendo este documento es porque ha seguido nuestro tutorial d entoicias
+	con php y quieres instalar este sistema de noticias para ver como funciona
+	Por supuesto que esta libre de cualquier modificacion que quieras hacerle 
+	solo trata de ser cortez y deja un agradesimiento.. www.comocrearmiweb.com
+
+	
+
+	Instrucciones
+	1- Si descomprimiste el archivo asegurate que este en el localhost en la carpeta
+	   de servidor en mi caso utilizo el XAMPP y mi carpeta esta en 
+	   C:/XAMPP/htdos
+	
+	2- Ahora abre el navegador y antra a tu servidor phpmyadmin y dale donde dice crear una base de datos con el nombre de "noticiero" sin las comillas ahora busca el boton importar,
+	   luego de esto busca el archivo "noticiero.sql" que esta en la 
+	   carpeta que descomprimiste y listo con esto todo estara andando muy bien
+	
+	3- Si se te olvidaron los datos del administrador son:
+	   Nombre: admin@hotmail.com
+	   Clave: admin
