@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<link rel="stylesheet" href="css/all.css">
+	<title>Travel Landing Page</title>
+</head>
+<body>
+	<section class="showcase"><!--Inicia section-->
+		<header><!--Inicia header-->
+			<h2 class="logo">Travel</h2>
+			<div class="toggle"></div>
+		</header><!--Termina header-->
+
+		<video src="videos/background.mp4" muted loop autoplay></video>
+
+		<div class="overlay"></div>
+
+		<div class="text"><!--Inicia text-->
+			<h2>Never stop</h2>
+			<h3>Exploring the World</h3>
+			<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Animi reprehenderit recusandae earum accusantium officiis cupiditate nobis sint voluptas obcaecati ipsa.</p>
+			<a href="#">Explore</a>
+		</div><!--Termina text-->
+		
+		<!--checar sociales-->
+		<ul class="social"><!--Inicia social-->
+			<li><a href=""><i class="fab fa-facebook"></i></a></li>
+			<li><a href=""><i class="fab fa-twitter"></i></a></li>
+			<li><a href=""><i class="fab fa-instagram"></i></a></li>
+		</ul><!--Termina social-->
+	</section><!--Termina section-->
+
+	<div class="menu"><!--Inicia menu-->
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Destination</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div><!--Termina menu-->
+
+
+	<script>
+		const menuToggle = document.querySelector('.toggle');
+		const showcase = document.querySelector('.showcase');
+
+		menuToggle.addEventListener('click', () => {
+			menuToggle.classList.toggle('active')
+			showcase.classList.toggle('active')
+		})
+	</script>
+</body>
+</html>

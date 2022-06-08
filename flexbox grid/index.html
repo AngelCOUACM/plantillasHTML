@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flexbox Grid</title>
+<link rel="stylesheet" href="css/flexboxgrid.min.css">
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!--Header-->
+	<header class="row">
+	<!--
+	extra small- xs
+	small - sm
+	medium -md
+	large - lg -->
+		<div class="col-xs-12">
+			<div class="header">
+				<h1>Header</h1>
+			</div>
+		</div>
+	</header>
+	
+	<!--alineamiento horizontal: .start-tamaño,.center-tamaño,.end-tamaño -->
+	<div class="row center-xs start-sm end-md">
+	<!--offset: col-tamaño-offset-ancho-->
+		<div class="col-xs-4 ">
+			<div class="aux">
+				<h2>:D</h2>
+			</div>
+		</div>
+	</div>
+	
+<!--Contenido-->
+<!--alineamiento vertical: .top-tamaño,.middle-tamaño,.bottom-tamaño -->
+<!--distribucion: .around-tamaño, .between-tamaño -->
+<!--reordenamiento: .first-tamaño, .last-tamaño-->
+<div class="row principal middle-xs between-xs reverse">
+	<div class="col-xs-12 col-md-2">
+		<div class="sidebar1">
+			<h3>Sidebar 1</h3>
+			<br><br><br><br>
+		</div>
+	</div>
+	
+	<div class="col-xs-12 col-md-4">
+		<div class="contenido">
+			<h2>Contenido</h2>
+		</div>
+	</div>
+	
+	<div class="col-xs-12 col-md-2">
+		<div class="sidebar2">
+			<h3>Sidebar 2</h3>
+			<br><br><br><br>
+		</div>
+	</div>
+</div>
+
+<!--Footer-->
+<footer class="row">
+	<div class="col-xs-12">
+		<div class="footer">
+			<h2>Footer</h2>
+		</div>
+	</div>
+</footer>
+
+</div>
+</body>
+</html>
