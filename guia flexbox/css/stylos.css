@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #E9E9E9;
+}
+
+.contenedor{
+	width: 500px;
+	height: 400px;
+	background: #fff;
+	padding: 10px;
+	border: 10px solid #2C3E50;
+	margin: 20px;
+	
+	display: flex; /*cajas en linea: inline-flex,flex*/
+	flex-direction: row; /*direccion de las cajas row,column,row-reverse,column-reverse*/
+	
+	flex-wrap: nowrap;/*wrap,wrap-reverse,nowrap*/
+	
+	/*flex-flow: row wrap;valor de flex-direction y valor de flex-wrap*/
+	
+	justify-content: space-between;/*posiscion de elemntos: flex-start(inicio),flex-end(fin),center(centrado),space-around(distribucion por ancho),space-between(distribucion por ancho sin margen a os lados)*/
+	
+	align-items: center;/*posiscion de elemntos: flex-start(inicio),flex-end(fin),center(centrado),stretch(abarca 100% alto),baseline(posicion con elemnto en los div)*/
+	
+	/*align-content: center;alineacion en varias filas con wrap: flex-start,flex-end,center,stretch, space-between,space-around*/
+	
+}
+
+.elemento{
+	color: #fff;
+	margin: 5px;
+	/*width: 350px;*/
+	flex-basis: 50px;/*para row:width; para column:height*/
+	height: 50px;
+	background: #E67E22;
+	text-align: center;
+	
+	/*flex-grow: 1;/*crecimento de un elemento conforme a otros
+	
+	flex-shrink: 1;/*decrecimiento de un elemento conforme a otros*/
+	
+	flex: 1;/*atajo para flex-grow,flex-basis,flex-shrink*/
+	/*order: 1;/*ordena los elementos conforme comvenga*/
+	
+}
+
+.elemento3{
+	align-self: flex-start;/*flex-start,flex-end,center,stretch,baseline*/
+}
+
